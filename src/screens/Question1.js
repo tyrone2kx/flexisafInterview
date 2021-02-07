@@ -106,20 +106,6 @@ const Question1 = (props) => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     return (
         <div>
             <Header />
