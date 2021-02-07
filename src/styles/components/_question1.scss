@@ -1,0 +1,58 @@
+.question_container {
+    padding: 20px;
+    background: var(--secondaryContainerColor);
+    border-radius: 5px;
+    margin-bottom: 100px;
+}
+
+.table_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.table {
+    width: 100%;
+    text-align: center;
+}
+
+.table_body_row {
+    background-color: var(--secondaryContainerColor);
+}
+
+.button_holder {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.btn {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    transition: .3s ease;
+}
+
+.forward_btn {
+    background: $green;
+    color: #FFF;
+    &:hover {
+        background: darken($color: $green, $amount: 20);
+    }
+}
+
+.rotate_btn {
+    background: $purple;
+    color: #FFF;
+    &:hover {
+        background: darken($color: $purple, $amount: 20);
+    }
+}
+
+.q_input {
+    background: var(--secondaryContainerColor);
+    border: none;
+    padding: 5px;
+    color: var(--primaryTextColor);
+}

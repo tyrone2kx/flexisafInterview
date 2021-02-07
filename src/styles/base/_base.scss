@@ -1,0 +1,48 @@
+html {
+  --primaryBackgroundColor: hsl(0, 0%, 94%);
+  --primaryTextColor: #444;
+  --headerBackgroundColor: #FFF;
+  --primaryBorderColor: #DEDEDE;
+  --primaryContainerColor: #FFFFFF;
+  --secondaryTextColor: #666;
+  --secondaryTextColor2: #999;
+  --secondaryContainerColor: #f2f2f2;
+}
+
+html.dark {
+  --primaryBackgroundColor: #18191a;
+  --primaryTextColor: #FAFAFA;
+  --headerBackgroundColor: #242526;
+  --primaryBorderColor: #333;
+  --primaryContainerColor: #242526;
+  --secondaryTextColor: #b0b3b8;
+  --secondaryTextColor2: #fafafa6b;
+  --secondaryContainerColor: #333;
+}
+
+body {
+  background: var(--primaryBackgroundColor);
+  color: var(--primaryTextColor);
+  font-family: '-apple-system',BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+  line-height: 1.5;
+}
+
+
+input {
+  outline: none;
+  outline-width: 0px;
+}
+
+button {
+  cursor: pointer;
+  outline-width: 0px;
+  outline: none;
+  transition: .3s ease;
+}
+
+
+
+
+
+
+  
