@@ -21,13 +21,19 @@ const Question3 = (props) => {
 
     const fetchBreedImages = (breed) => {
         setActiveMenu(breed);
+
+        // Close the menu on mobile
         setOpenMenu(false);
+
+        // Display the Loader Modal
         props.showSiteModal();
         props.startLoading();
+
         axios.get(`https://dog.ceo/api/breed/${breed}/images`).then(response => {
             props.stopLoading();
             const ref = response.data;
             if (ref.status === 'error') {
+                // Display the error message on Error
                 props.setError(ref.message)
             }
             else {
@@ -134,8 +140,6 @@ const Question3 = (props) => {
 
 const mapStateToProps = (state) => ({
     site: state.site,
-    user: state.user,
-    cart: state.cart
 });
 
 
